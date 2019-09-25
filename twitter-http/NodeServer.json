@@ -1,0 +1,18 @@
+{
+    "apps": [{
+        "name": "twitter-http",
+        "script": "./bin/www",
+        "instances": "1",
+        "exec_mode": "fork",
+        "watch": false,
+        "ignore_watch": [
+            "./node_modules",
+            "./logs"
+        ],
+        "min_uptime": "60s",
+        "error_file": "./logs/err.log",
+        "out_file": "/dev/null",
+        "combine_logs": true,
+        "log_date_format": "YYYY-MM-DD HH:mm:ss"
+    }]
+}
